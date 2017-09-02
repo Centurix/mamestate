@@ -10,6 +10,16 @@ supported by MAME. Currently, the script recognised the following state changes:
 * Game over
 * Hi score beaten
 
+Usage
+=====
+
+When starting MAME, use the -autoboot_script parameter:
+
+mame -autoboot_script /path/to/attract.lua pacman
+
+Notes
+=====
+
 There are 'drivers' for each game in the states directory. These are LUA classes that export
 various functions which detect these states in the game. States are scanned once a second so
 as not to tie up the emulator with long operations.
